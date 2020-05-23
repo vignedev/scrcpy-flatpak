@@ -1,7 +1,7 @@
 {
     "app-id": "com.Genymobile.Scrcpy",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "scrcpy",
     "modules": [
@@ -9,7 +9,7 @@
             "name": "scrcpy",
             "buildsystem": "simple",
             "build-commands": [
-                "install -D scrcpy-server-v1.10.jar /app/bin/scrcpy-server.jar",
+                "install -D scrcpy-server-v1.13 /app/bin/scrcpy-server.jar",
                 "meson x --buildtype release --strip -Db_lto=true -Dprebuilt_server=/app/bin/scrcpy-server.jar",
                 "ninja -C x",
                 "install -D x/app/scrcpy /app/bin/scrcpy"
@@ -19,12 +19,12 @@
                     "type": "git",
                     "url": "https://github.com/Genymobile/scrcpy.git",
                     "branch": "release",
-                    "commit": "9bcee4ea428472c884fc869a42e0d667c5958b4b"
+                    "commit": "82446b6b0db284e9f9a125cd3e4785586f6845f3"
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/Genymobile/scrcpy/releases/download/v1.10/scrcpy-server-v1.10.jar",
-                    "sha256": "cbeb1a4e046f1392c1dc73c3ccffd7f86dec4636b505556ea20929687a119390"
+                    "url": "https://github.com/Genymobile/scrcpy/releases/download/v1.13/scrcpy-server-v1.13",
+                    "sha256": "5fee64ca1ccdc2f38550f31f5353c66de3de30c2e929a964e30fa2d005d5f885"
                 }
             ]
         },
