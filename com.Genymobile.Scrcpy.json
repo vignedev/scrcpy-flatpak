@@ -18,7 +18,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Genymobile/scrcpy.git",
-                    "branch": "release",
+                    "branch": "master",
                     "commit": "82446b6b0db284e9f9a125cd3e4785586f6845f3"
                 },
                 {
